@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Color Selector</title>
 </head>
 
 <body>
 
     <div class="container">
-        <input type="color">
+        <input type="color" oninput="changeColor(this.value)">
         <div class="result">
-            <div class="color-selector"></div>
-            <p>Color value: </p>
+            <div class="color-selector" id="resultColor"></div>
+            <p>Color value: <b id="resultvalue"></b></p>
         </div>
     </div>
 
